@@ -1,0 +1,19 @@
+DATA:
+    TRAIN_ROOT: '/PATH/TO/HMDB51'
+    VAL_ROOT: '/PATH/TO/HMDB51'
+    TRAIN_FILE: '/PATH/TO/train.txt'
+    VAL_FILE: '/PATH/TO/val.txt'
+    DATASET: hmdb51
+    NUM_FRAMES: 32
+    NUM_CLASSES: 51
+    LABEL_LIST: 'labels/hmdb_51_labels.csv'
+    DESCRIPTION: ['labels/hmdb_51_action_decomposition.csv','labels/hmdb_51_body.csv','labels/hmdb_51_synonyms.csv']
+MODEL:
+    ARCH: ViT-B/16
+    MASK_MODE: 'KMT'
+    RESUME: 'k400_exp_16_32_KMT/best.pth'
+TRAIN:
+    BATCH_SIZE: 4
+    ACCUMULATION_STEPS: 2
+    EPOCHS: 80
+    LR: 2.e-6

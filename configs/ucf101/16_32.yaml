@@ -1,0 +1,19 @@
+DATA:
+    TRAIN_ROOT: '/PATH/TO/UCF101'
+    VAL_ROOT: '/PATH/TO/UCF101'
+    TRAIN_FILE: '/PATH/TO/train.txt'
+    VAL_FILE: '/PATH/TO/val.txt'
+    DATASET: ucf101
+    NUM_FRAMES: 32
+    NUM_CLASSES: 101
+    LABEL_LIST: 'labels/ucf_101_labels.csv'
+    DESCRIPTION: ['labels/ucf_101_action_decomposition.csv','labels/ucf_101_body.csv','labels/ucf_101_synonyms.csv']
+MODEL:
+    ARCH: ViT-B/16
+    MASK_MODE: 'KMT'
+    RESUME: 'k400_exp_16_32_KMT/best.pth'
+TRAIN:
+    BATCH_SIZE: 4
+    ACCUMULATION_STEPS: 2
+    EPOCHS: 80
+    LR: 2.e-6

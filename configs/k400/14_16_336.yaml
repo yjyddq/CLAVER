@@ -1,0 +1,18 @@
+DATA:
+    TRAIN_ROOT: '/PATH/TO/K400/train'
+    VAL_ROOT: '/PATH/TO/K400/val' # or '/PATH/TO/K400/test'
+    TRAIN_FILE: '/PATH/TO/train.txt'
+    VAL_FILE: '/PATH/TO/val.txt' # or '/PATH/TO/test.txt'
+    DATASET: kinetics400
+    NUM_FRAMES: 16
+    NUM_CLASSES: 400
+    LABEL_LIST: 'labels/kinetics_400_labels.csv'
+    DESCRIPTION: ['labels/kinetics_400_action_decomposition.csv','labels/kinetics_400_body.csv','labels/kinetics_400_synonyms.csv']
+    INPUT_SIZE: 336
+MODEL:
+    ARCH: ViT-L/14@336px
+    MASK_MODE: 'KMT'
+TRAIN:
+    BATCH_SIZE: 1
+    ACCUMULATION_STEPS: 32
+    USE_CHECKPOINT: True

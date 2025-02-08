@@ -1,0 +1,16 @@
+DATA:
+    TRAIN_ROOT: '/PATH/TO/K600/train'
+    VAL_ROOT: '/PATH/TO/K600/val' # or '/PATH/TO/K600/test'
+    TRAIN_FILE: '/PATH/TO/train.txt'
+    VAL_FILE: '/PATH/TO/val.txt' # or '/PATH/TO/test.txt'
+    DATASET: kinetics600
+    NUM_FRAMES: 32
+    NUM_CLASSES: 600
+    LABEL_LIST: 'labels/kinetics_600_labels.csv'
+    DESCRIPTION: ['labels/kinetics_600_action_decomposition.csv','labels/kinetics_600_body.csv','labels/kinetics_600_synonyms.csv']
+MODEL:
+    ARCH: ViT-B/16
+    MASK_MODE: 'KMT'
+TRAIN:
+    BATCH_SIZE: 8
+    ACCUMULATION_STEPS: 4
