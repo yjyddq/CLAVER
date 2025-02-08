@@ -5,22 +5,24 @@
 > Accepted by ICLR 2025<br>
 > Jingyi Yang, Zitong Yu, Xiuming Ni, Jia He, Hui Li
 
-This is an official implementation of [CLAVER](https://arxiv.org/abs/2502.03549), a framework adapting language-image foundation models to general video recognition. 
+This is an official implementation of [CLAVER](https://arxiv.org/abs/2502.03549), a framework which shifts from
+the alignment of visual objects and nouns in CLIP to the alignment of action behaviors and verbs.
 
+<center><b>Framework:</b></center>
 <div align="center">
     <img width="80%" alt="Framework" src="figures/Framework.jpg"/>
 </div>
-<center><b>Framework</b></center>
 
+<center><b>Kronecker Mask Attention:</b></center>
 <div align="center">
     <img width="80%" alt="Kronecker Mask Attention" src="figures/Kronecker_Mask_Attention.jpg"/>
 </div>
-<center><b>Kronecker Mask Attention</b></center>
 
+<center><b>Interpretive Prompt:</b></center>
 <div align="center">
     <img width="80%" alt="Interpretive Prompt" src="figures/Interpretive_Prompt.jpg"/>
 </div>
-<center><b>Interpretive Prompt</b></center>
+
 
 
 # News
