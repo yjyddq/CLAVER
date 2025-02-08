@@ -5,19 +5,23 @@
 > Accepted by ICLR 2025<br>
 > Jingyi Yang, Zitong Yu, Xiuming Ni, Jia He, Hui Li
 
-This is an official implementation of [CLAVER](https://arxiv.org/abs/2502.03549), a new framework adapting language-image foundation models to general video recognition. 
+This is an official implementation of [CLAVER](https://arxiv.org/abs/2502.03549), a framework adapting language-image foundation models to general video recognition. 
 
 <div align="center">
-    <embed src="./figures/Framework.pdf" type="application/pdf" width="80%" height="500px" />
+    <img width="80%" alt="Framework" src="figures/Framework.jpg"/>
 </div>
+<center><b>Framework</b></center>
 
 <div align="center">
-    <embed src="./figures/Kronecker_Mask_Attention.pdf" type="application/pdf" width="80%" height="500px" />
+    <img width="80%" alt="Kronecker Mask Attention" src="figures/Kronecker_Mask_Attention.jpg"/>
 </div>
+<center><b>Kronecker Mask Attention</b></center>
 
 <div align="center">
-    <embed src="./figures/Interpretive_Prompt.pdf" type="application/pdf" width="80%" height="500px" />
+    <img width="80%" alt="Interpretive Prompt" src="figures/Interpretive_Prompt.jpg"/>
 </div>
+<center><b>Interpretive Prompt</b></center>
+
 
 # News
 - :sparkles: **[January, 2025]** Our paper has been accepted by ICLR2025.
@@ -38,7 +42,7 @@ cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 ```
 
-For llama3 environment setup, you can refer to [Meta-llama3](https://github.com/meta-llama/llama3)
+For llama3 environment setup, you can refer to [Meta-llama3](https://github.com/meta-llama/llama3).
 
 
 # Data Preparation
@@ -84,7 +88,7 @@ id,name
 ```
 The `id` indicates the class id, while the `name` denotes the text description.
 
-For the Interpretive Prompts generation, you can use following command to generate (after you setup the llama3 environment):
+For the **Interpretive Prompts** generation, you can use following command to generate (after you setup the llama3 environment):
 ```
 torchrun --nproc_per_node 1 data_prepare/llama3/action_descriptions.py \
     --ckpt_dir Meta-Llama-3-8B/ \
