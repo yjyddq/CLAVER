@@ -177,14 +177,11 @@ python -m torch.distributed.launch --nproc_per_node=8 main.py \
 # Bibtex
 If this project is useful for you, please consider citing our paper :mega:
 ```
-@misc{yang2025kroneckermaskinterpretiveprompts,
-      title={Kronecker Mask and Interpretive Prompts are Language-Action Video Learners}, 
-      author={Jingyi Yang and Zitong Yu and Xiuming Ni and Jia He and Hui Li},
-      year={2025},
-      eprint={2502.03549},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2502.03549}, 
+@article{yang2025kronecker,
+  title={Kronecker Mask and Interpretive Prompts are Language-Action Video Learners},
+  author={Yang, Jingyi and Yu, Zitong and Ni, Xiuming and He, Jia and Li, Hui},
+  journal={arXiv preprint arXiv:2502.03549},
+  year={2025}
 }
 ```
 # Acknowledgements
